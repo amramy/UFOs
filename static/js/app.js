@@ -16,7 +16,7 @@ function buildTable(data) {
     // use forEach loop with fat arrow to loop through each object in array. 
     // loops like 'for' loop except 'forEach' only works with arrays!!! can be combined with 
     // chaining for loop to our data
-    data.forEach((dateRow) => {
+    data.forEach((dataRow) => {
         // create a variable that will append a row to the table body
         // notice let instead of var... limit to just this block... 
         // **Remember**use var when want code to be available globally
@@ -44,20 +44,20 @@ function handleClick() {
     // .property() look for and GRAB info and hold it in "date"
     let date = d3.select("#datetime").property("value");
     // Set default filter & save to new variable (OG table data), let user seach
-    let filterData = tableData;
+    let filteredData = tableData;
     // check date filter using "if" statement (check for conditions)
 
     // if statement to filter for date, if present return only that data
     //if-statement syntax
     //if ( condition ) { code to execute }
     if (date) {
-        filterData = filterData.filter(row => row.datetime === date);
+        filteredData = filteredData.filter(row => row.datetime === date);
     };
 
     // Rebuild table with filtered data
     // NOTE ** if no date entered original tableData will display
-    buildTable(filterData);
-}
+    buildTable(filteredData);
+};
 
 // Listen for the Event of a click
 // selector string is id for HTML tag... adding unique id "filter-btn"

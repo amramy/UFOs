@@ -1,1 +1,15 @@
-<link rel="stylesheet" href="static/css/style.css">
+/* comments in CSS can be a block not just one line... end with */ 
+
+/* light text applied to the body*/
+body {
+
+    color: #f7f7f7;
+  }
+
+  /* create entry to style only jumbotron element (class=jumbotron),
+  specify image with path, size the background to element, align text center */
+  .jumbotron {
+    background-image: url('../images/nasa.jpg');
+    background-size: 100% 100%;
+    text-align: center;
+  }
