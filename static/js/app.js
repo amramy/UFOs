@@ -11,7 +11,7 @@ var tbody = d3.select("tbody");
     // and OR many duplicates... no good for anyone.
     // use tbody.html- references table directly with ("") -empty string
 function buildTable(data) {
-    tbody.htmlL("");
+    tbody.html("");
 
     // use forEach loop with fat arrow to loop through each object in array. 
     // loops like 'for' loop except 'forEach' only works with arrays!!! can be combined with 
