@@ -33,4 +33,5 @@ Recommendations for further development of this webpage would be:
   * Case insensitivity for all filters except for the date filter.
   * Include a button to search filters after the inputs have been made. 
     * Hitting enter after the user makes an entry may or may not be intuitive. 
+  * Include a "clear filters" button for the user to restart their search. 
   * Include a form a user could complete to submit a UFO observation to be reviewed then added to the dataset. 
