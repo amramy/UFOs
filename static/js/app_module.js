@@ -46,7 +46,6 @@ function handleClick() {
     // Set default filter & save to new variable (OG table data), let user seach
     let filteredData = tableData;
     // check date filter using "if" statement (check for conditions)
-
     // if statement to filter for date, if present return only that data
     //if-statement syntax
     //if ( condition ) { code to execute }
